@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: white;
+    background-color: #000010;
+    display: flex;
+}
+.menu {
+    background-color: #101e2d;
+    width: 56PX;
+    height: 100vh; 
+    padding: 10px; 
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.menu .left ul li {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px; 
+    border-radius: 15px;
+    transition: 0.4s;  
+     
+}
+.menu .left ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 23px;
+    font-size: 20px;
+}
+.menu .left ul li i {
+    font-size: 30px;
+}
+.profile .image img {
+     
+    width: 40px;
+    height : 40px ;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px white solid; 
+    margin-right: 10px; 
+  
+}
+.profile {
+    display: flex;
+    align-items: center;
+    overflow: hidden ;
+}
+.profile .name {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 700;
+}
+.log-out {
+   
+    float: left;
+    position: absolute;
+    bottom: 5%;
+    overflow: hidden;
+    
+}
+.menu:hover {
+    width: 260px;
+}
+.left ul li:hover {
+    background-color: rgb(71, 56, 56);
+}
+/* content */
+.content .dash {
+    background-color: rgb(0, 145, 255);
+    display: flex ;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between ;
+    
+   
+}
+.content {
+    
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    
+    
+}
+.content .data-content {
+    
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+ 
+    
+}
+.content .data-content div {
+    background-color: #101e2d;
+    flex-grow: 1;
+    width: 150px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.table {
+    background-color: #fa5252;
+    display: flex;
+    width: 100%;
+}
+.content .data-content div p {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.data-content div:hover , table tr td:hover {
+    background-color:   rgb(71, 56, 56);;
+}
+/* table */
+table {
+    width: 100%;
+    margin-top: 5px;
+}
+table tr td {
+    background-color: #101e2d;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s;
+   
+}
+table thead tr td {
+    background-color: rgb(2, 87, 69);
+}
+table tbody .price {
+    background-color: green;
+}
+table tbody .count {
+    background-color: yellow;
+    color: black;
+}
